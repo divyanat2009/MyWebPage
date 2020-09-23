@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*---CSS Style Body ---*/ 
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  padding:0;
+  color: rgb(83, 80, 80);
+  background-color: rgb(234, 242, 245);
+  font-size: 16px;
+  text-align: center;
+}
+
+p
+{
+  color: rgb(153, 146, 146);
+  padding: 5px;
+}
+
+/*---header h1---*/
+header
+{
+  padding:10px;
+}
+header h1{
+  font-size: 40px;
+  text-align: center;
+ }
+.meImage
+{
+  width: 200px;
+}
+/*---Introduction---*/
+.intro
+{
+  font-size: 20px;
+}
+/*---About Me---*/
+section
+{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+section ul li{
+  list-style: none;
+}
+
+/*---Contact---*/
+contact h3{
+  font-size: 22px;
+   padding: 5px;
+}
+contact ol li{
+  list-style : none;
+}
+contact ol li a{
+  text-decoration: none;
+}
+
+/*---Footer---*/
+footer{
+  text-align: center;
+  font-size: 12px;
+}
+/*---Contact Links---*/
+.contact ol a{
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+hr{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact ol li{
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contact a:link{color: rgb(97, 96, 96);}
+.contact a:visited{color: darkblue;}
+.contact a:hover{color: grey;}
+.contact a:active{color:black}
