@@ -18,6 +18,7 @@ p
 }
 
 /*---header h1---*/
+
 header
 {
   padding:10px;
@@ -29,13 +30,17 @@ header h1{
 .meImage
 {
   width: 200px;
+  height: 250px;
+  
 }
 /*---Introduction---*/
+
 .intro
 {
   font-size: 20px;
 }
 /*---About Me---*/
+
 section
 {
   font-size: 20px;
@@ -44,31 +49,39 @@ section
 
 section ul li{
   list-style: none;
+  padding-bottom: 20px;
 }
 
 /*---Contact---*/
-contact h3{
+
+.contact h3{
   font-size: 22px;
    padding: 5px;
 }
-contact ol li{
+.contact ol li{
   list-style : none;
 }
-contact ol li a{
+.contact ol li a{
   text-decoration: none;
 }
 
 /*---Footer---*/
+
 footer{
   text-align: center;
   font-size: 12px;
 }
+
 /*---Contact Links---*/
+
 .contact ol a{
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/*--- Horizontal Line---*/
+
 hr{
   margin-top: 30px;
   margin-bottom: 30px;
