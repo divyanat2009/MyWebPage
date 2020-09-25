@@ -71,6 +71,7 @@ nav ul li a{
   margin: 10px;
 }
 /*Group & Item-Desktop*/
+
 @media all and(min-width=800px){
   .wrapper{
     width:80%;
@@ -80,12 +81,45 @@ nav ul li a{
     flex-direction: row;
   }
 }
+
 /*---Introduction---*/
 
 .intro
 {
   font-size: 20px;
 }
+
+/*Portfolio*/
+
+.flex-container{
+  margin-top:80px;
+  float: left;
+  clear: both;
+}
+
+section .flex-container .flex-items{
+  width: 20%;
+  display: inline-block;
+  margin: 46px;
+  text-align: center;
+}
+
+section .flex-container .flex-items h4{
+  font-size: 18px;
+  margin: 20px 0px;
+  letter spacing: 0.5px;
+}
+
+section .flex-container .flex-items p{
+  color: #727272;
+}
+
+section .flex-container .flex-items .text-blue{
+  color: blue;
+  font-size: 40px;
+}
+
+
 /*---About Me---*/
 
 section
