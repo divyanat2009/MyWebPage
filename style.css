@@ -11,129 +11,105 @@ body{
   text-align: center;
 }
 
-p
-{
-  color: rgb(153, 146, 146);
-  padding: 5px;
-}
+/*---Header h1 & Navigation---*/
 
-/*---header h1---*/
-
-header
-{
-  padding:10px;
-}
-.navbar{
+header .navbar{
+padding: 10px;  
 margin: 10px;
 font-size: 30px;
 text-decoration: none;
+color: #f3f3f3;
 }
-nav ul {
+header .profileName{
+  text-align: left;
+  color: rgb(83, 80, 80);
+}
+header nav ul {
 float : right;
 }
-nav ul li {
+
+header nav ul li {
 display: inline-block;
+float: left;
 list-style-type: none;
 }
-nav ul li a{
+
+header nav ul li a{
   text-decoration: none;
   color: rgb(83, 80, 80);
   padding: 35px 10px;
   font-size: 15px;
   letter-spacing: 0.5px;
-  line-height: 100px;
-}
-.profileName{
-  float: left;
-  line-height: 100px;
-}
-.meImage
-{
-  width: 200px;
-  height: 250px;
-  
 }
 
-/* Group & Item - Mobile First*/
-.wrapper{
+
+/*--Introduction--*/
+.meImage{
   width: 100%;
 }
-.group{
+
+.introduction {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
-.item{
-  flex: 1;
-  margin: 10px;    
-}
-.item-double{
-  flex:2;
+
+.introduction .group .item{
   margin: 10px;
-}
-/*Group & Item-Desktop*/
-
-@media all and(min-width=800px){
-  .wrapper{
-    width:80%;
-    margin: auto;
-  }
-  .group{
-    flex-direction: row;
-  }
-}
-
-/*---Introduction---*/
-
-.intro
-{
-  font-size: 20px;
-}
-
-/*Portfolio*/
-
-.flex-container{
-  margin-top:80px;
-  float: left;
-  clear: both;
-}
-
-section .flex-container .flex-items{
-  width: 20%;
-  display: inline-block;
-  margin: 46px;
-  text-align: center;
-}
-
-section .flex-container .flex-items h4{
-  font-size: 18px;
-  margin: 20px 0px;
-  letter spacing: 0.5px;
-}
-
-section .flex-container .flex-items p{
-  color: #727272;
-}
-
-section .flex-container .flex-items .text-blue{
-  color: blue;
-  font-size: 40px;
+  width: 400px;
 }
 
 
 /*---About Me---*/
 
-section
-{
-  font-size: 20px;
-  margin-top: 30px;
+.aboutMe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  margin-top: 10px;
+}
+.aboutMe .group .item{
+margin: 10px;
+width: 400px;
 }
 
-section ul li{
-  list-style: none;
-  padding-bottom: 20px;
+.aboutMe h2{
+  font-size: 25px;
+  text-align: left;
 }
+.aboutMe .group .meImage{
+  width: 100%;
+}
+
+
+
+/*Portfolio*/
+
+.portfolio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.portfolio .flex-container{
+  margin: 10px;
+  width: 400px;
+  background-color: rgb(228, 220, 220);
+  text-align: center;
+  
+}
+.portfolio .flex-container h4{
+font-size: 30px;
+color: rgb(167, 161, 161)
+}
+.portfolio .flex-container p{
+  font-size: 25px;
+  font-style: italic;
+}
+
 
 /*---Contact---*/
+
 
 .contact h3{
   font-size: 22px;
@@ -145,14 +121,6 @@ section ul li{
 .contact ol li a{
   text-decoration: none;
 }
-
-/*---Footer---*/
-
-footer{
-  text-align: center;
-  font-size: 12px;
-}
-
 /*---Contact Links---*/
 
 .contact ol a{
@@ -176,3 +144,11 @@ hr{
 .contact a:visited{color: darkblue;}
 .contact a:hover{color: grey;}
 .contact a:active{color:black}
+
+/*---Footer---*/
+
+footer{
+  text-align: center;
+  font-size: 12px;
+
+}
