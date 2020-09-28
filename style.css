@@ -3,94 +3,72 @@
 /*---CSS Style Body ---*/ 
 body{
   font-family: 'Montserrat', sans-serif;
-  margin: auto;
+  margin: 0;
   padding:0;
   line-height: 1.5;
   color: rgb(83, 80, 80);
   background-color: rgb(234, 242, 245);
-  font-size: 16px;
-  text-align: center;
+  height: auto;
+  
 }
 
 /*---Header h1 & Navigation---*/
 
 header {
-background-color: rgb(228, 220, 220);
-padding: 10px;  
-margin: 10px;
-min-height: 70px;
 color: #f3f3f3;
+width: 100%;
+
 }
-header .profileName{
-  float: left;
+
+h1{
+  text-align: center;
   color: rgb(83, 80, 80);
-  font-size: 15x;
-}
-header ul {
-margin: 0;
-padding:0;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 header li{
 display: inline-block;
+text-align: center;
 list-style-type: none;
-padding: 0 20px 0 20px;
 }
 
 header a{
   text-decoration: none;
   color: rgb(83, 80, 80);
-  padding: 10px 10px;
-  font-size: 15px;
-  letter-spacing: 0.5px;
+  font-size: 0.6rem;
   transition: all 0.5s;
 }
 header a:hover{
   color:rgb(43, 40, 40);
   font-weight: bold;
 }
-header nav{
-  float: right;
-  margin-top: 20px;
-}
+
 /*--Introduction--*/
 
- .introduction{
-  display: flex;
-  flex-direction: column;
+ 
+img {
+  display: block;
+width: 100%;
+float: center;
+  
 }
-.introduction .group{
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
+li{
+  list-style: none;
 }
-
-.introduction .group .item p{
-  font-size: 20px;
-  text-align: left;
+section{
+  padding-bottom: 10px;
 }
-
-.group .profilePic{
-  width: 50%;
-  height: auto;
-  margin-top: 20px;
-}
-
 /*---About Me---*/
 
-.aboutMe{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;  
-  margin-top: 10px;
-}
-.aboutMe .group .item{
-margin: 10px;
-font-size: 20px;
-}
-.aboutMe .group .item ul li{
+
+
+li{
+  font-size: 1.5rem;
   list-style-type: none;
   text-align: left;
+  padding: 20px;
+
 }
 
 .aboutMe h2{
@@ -106,47 +84,52 @@ font-size: 20px;
 
 /*Portfolio*/
 
-.group{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 0.5px solid #f3f3f3;
-  transition: all 0.5s;  
+
+section h2{
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
 }
-.portfolio .group .flex-container:hover{
-  box-shadow: -1px 3px 10px 0;
-}
-.portfolio .flex-container{
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
-  width: 400px;
-  background-color: rgb(228, 220, 220);
+section p{
+  font-size: 1.5rem;
   text-align: center;
   
 }
-.portfolio .flex-container h4{
-font-size: 30px;
+.flex-container:hover{
+  box-shadow: -1px 3px 10px 0;
+}
+.flex-container{
+  margin: 30px;
+  width: 300px;
+  background-color: rgb(234, 242, 245);
+  text-align: center;
+  
+}
+.flex-container h4{
+font-size: 1.5rem;
 color: rgb(167, 161, 161)
 }
-.portfolio .flex-container p{
-  font-size: 20px;
-  font-style: italic;
+
+/*Background color change to section*/
+
+section.portfolio{
+  background-color: rgb(190, 208, 214);
 }
 
 
 /*---Contact---*/
-
-
+.contact p{
+  text-align: center;
+}
 .contact h3{
-  font-size: 22px;
-   padding: 5px;
+  font-size: 2.5rem;
+  padding: 5px;
+  text-align: center;
 }
-.contact ol li{
-  list-style : none;
-}
+
 .contact ol li a{
   text-decoration: none;
+  float: center;
 }
 /*---Contact Links---*/
 
@@ -156,13 +139,9 @@ color: rgb(167, 161, 161)
   padding-bottom: 5px;
 }
 
-/*--- Horizontal Line---*/
 
-hr{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .contact ol li{
+  list-style : none;
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -172,11 +151,16 @@ hr{
 .contact a:hover{color: grey;}
 .contact a:active{color:black}
 
+/*--- Horizontal Line---*/
+
+hr{
+  margin: 10px;
+}
+
 /*---Footer---*/
 
 footer{
-  background-color: rgb(228, 220, 220);
-  min-height: 70px;
   text-align: center;
+  min-height: 70px;
   font-size: 12px;
 }
