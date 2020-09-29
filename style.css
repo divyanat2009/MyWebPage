@@ -122,7 +122,10 @@ color: rgb(167, 161, 161)
 .flex-container p{
   font-size:15px;
 }
-
+.icon{
+  padding:10px;
+  color:rgb(19, 19, 54)
+}
 /*Background color change to section*/
 
 section.portfolio{
@@ -161,10 +164,12 @@ section.portfolio{
     
 /*---Contact---*/
 .contact {
+  margin-top: 10px;
   justify-content: center;
 }
 .contact h3{
-  font-size: 2.5rem;
+  font-size: 25px;
+  font-weight: 400;
   padding: 5px;
   text-align: center;
 }
