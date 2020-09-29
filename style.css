@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-/*---CSS Style Body ---*/ 
+/*---CSS Core Style  ---*/ 
 body{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -9,49 +9,76 @@ body{
   color: rgb(83, 80, 80);
   background-color: rgb(234, 242, 245);
   height: auto;
-  
+  text-align: center;
+}
+img{
+  display:block;
+  width: 60%;
+  height: auto;
+}
+h1, h2, h3{
+  padding: 10px 0;
+  margin:0
+}
+p{
+  margin: 0;
+  padding: 10px 0;
+}
+section{
+  padding: 0 10px;
 }
 
 /*---Header h1 & Navigation---*/
 
 header {
 color: #f3f3f3;
-width: 100%;
-
+background-color: rgb(196, 190, 190);
+margin:0;
+padding:0;
 }
 
-h1{
+header h1{
   text-align: center;
   color: rgb(83, 80, 80);
-  font-size: 2.5rem;
   font-weight: 400;
 }
 
-header li{
-display: inline-block;
-text-align: center;
+header nav ul{
+display: flex;
+justify-content: center;
 list-style-type: none;
+
 }
 
-header a{
+header nav ul li a{
   text-decoration: none;
   color: rgb(83, 80, 80);
-  font-size: 0.6rem;
   transition: all 0.5s;
+  margin-right: 20px;
 }
 header a:hover{
   color:rgb(43, 40, 40);
   font-weight: bold;
 }
 
+@media all and(min-width: 800px){
+  header{
+    display:flex;
+    justify-content: space-between;
+    }
+  h1{
+    font-size: 30px;
+    margin:20px;
+  }
+  }
+
 /*--Introduction--*/
 
  
-img {
-  display: block;
-width: 100%;
+.profilePic {
+width: 40%;
+height:auto;
 float: center;
-  
 }
 li{
   list-style: none;
@@ -59,16 +86,13 @@ li{
 section{
   padding-bottom: 10px;
 }
+
 /*---About Me---*/
-
-
-
 li{
-  font-size: 1.5rem;
+  font-size: 20px;
   list-style-type: none;
   text-align: left;
-  padding: 20px;
-
+  
 }
 
 .aboutMe h2{
@@ -78,7 +102,7 @@ li{
 .group .codingImage{
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
@@ -116,10 +140,37 @@ section.portfolio{
   background-color: rgb(190, 208, 214);
 }
 
+/*Groups & Items-Mobile First*/
+.group{
+  display: flex;
+  flex-direction: row;
+  margin:0px auto;
+  width: 60%;
+}
+.item{
+  flex:1;
+}
 
+
+@media screen and(min-width:768px){
+  .group {
+    flex-direction:column;
+    width: 100%;
+    margin: 0px auto;
+    }
+    .flex-container{
+      height: 200px;
+      margin:10px;
+    }
+    contact ol{
+      margin: 0px auto;
+    }
+  }
+  
+    
 /*---Contact---*/
-.contact p{
-  text-align: center;
+.contact {
+  justify-content: center;
 }
 .contact h3{
   font-size: 2.5rem;
@@ -129,7 +180,6 @@ section.portfolio{
 
 .contact ol li a{
   text-decoration: none;
-  float: center;
 }
 /*---Contact Links---*/
 
@@ -145,6 +195,7 @@ section.portfolio{
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
 }
 .contact a:link{color: rgb(97, 96, 96);}
 .contact a:visited{color: darkblue;}
