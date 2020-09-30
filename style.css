@@ -159,12 +159,22 @@ section.portfolio{
     contact ol{
       margin: 0px auto;
     }
+    .contact{
+      flex-direction: row;
+      }
+    .msg textarea{
+       height:80px;
+     }
+    .input-fields, msg{
+       width: 100%;
+     }
+
   }
   
     
 /*---Contact---*/
 .contact {
-  margin-top: 10px;
+  padding: 20px;
   justify-content: center;
 }
 .contact h3{
@@ -197,6 +207,48 @@ section.portfolio{
 .contact a:visited{color: darkblue;}
 .contact a:hover{color: grey;}
 .contact a:active{color:black}
+
+/*--Contact Form--*/
+
+.contact-form{
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(190, 208, 214);
+    
+}
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding:20px;
+  
+}
+.input-fields, .msg{
+  width:80%;
+}
+.input, .msg textarea{
+  margin: 10px 0;
+  width: 100%;
+  background: transparent;
+  border:0;
+  border-bottom: 1px solid rgb(43, 40, 40);
+  color:rgb(43, 41, 41)
+}
+.msg textarea{
+  height: 200px;
+}
+.btn{
+  background-color: rgb(131, 125, 125);
+  color: rgb(251, 253, 253);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+
+}
 
 /*--- Horizontal Line---*/
 
