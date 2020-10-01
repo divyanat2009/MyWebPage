@@ -129,30 +129,25 @@
       </div>
       
       <div class="contact-form">
-        <div class="input-fields">
-          <form action="mailto:divya.nat2009@gmail.com" method="POST">
+        <form action="mailto:divya.nat2009@gmail.com" method="POST">
           <label for="username">Name</label>
-          <input id="username" type="text" name="name">
-          <label for="user-email">EMail</label>
-          <input id="user-email" type="text" name="email">
-          <label for="Subject">Subject</label>
-          <input id="subject" type="text" name="subject">
-        </div>
-        <div class="msg">
-        <textarea placeholder="How can I help you?" required maxlength="250"></textarea>  
-        <div class="btn">Send Message</div>
-        </form>
-
-        </div>
-       </div>
-
-      
+          <input class="input-fields" id="username" type="text" name="username" required>
+          <label for="useremail">EMail</label>
+          <input class="input-fields" id="useremail" type="email" name="useremail" required>
+          <label for="subject">Subject</label>
+          <input class="input-fields" id="subject" type="text" name="subject" required>
+          <div class="msg">
+            <label for="comment">How can I help you?</label>
+            <textarea id="comment" name="comment" required maxlength="250"></textarea>  
+            <input class="btn" type="submit" value="send message">
+          </div>  
+        </form>        
+      </div>  
       
     </main>
 
     <!--Horizontal Line-->
     <hr>
-
      
      <!--Footer-CopyRight-->
       <footer>
