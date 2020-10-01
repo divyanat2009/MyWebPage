@@ -162,6 +162,7 @@ section.portfolio{
     .contact{
       flex-direction: row;
       }
+      
     .msg textarea{
        height:80px;
      }
@@ -224,13 +225,14 @@ form label{
   display: block;
 }
 .input-fields, .msg{
-  width:80%;
-}
-.input-fields{
-  padding:20px;
+  width:100%;
 }
 form input{
   padding-bottom: 10px;
+  width: 100%;
+}
+form{
+  width:100%;
 }
 label{
   margin-top: 10px;
