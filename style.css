@@ -220,24 +220,28 @@ section.portfolio{
   box-shadow: 0 0 10px rgb(190, 208, 214);
     
 }
-.input-fields{
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-  padding:20px;
-  
+form label{
+  display: block;
 }
 .input-fields, .msg{
   width:80%;
 }
-.input, .msg textarea{
-  margin: 10px 0;
+.input-fields{
+  padding:20px;
+}
+form input{
+  padding-bottom: 10px;
+}
+label{
+  margin-top: 10px;
+}
+form input, .msg textarea{
   width: 100%;
   background: transparent;
   border:0;
   border-bottom: 1px solid rgb(43, 40, 40);
   color:rgb(43, 41, 41)
-}
+  }
 .msg textarea{
   height: 200px;
 }
