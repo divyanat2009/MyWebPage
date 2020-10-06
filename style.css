@@ -74,7 +74,7 @@ section{
 }
 
 /*---About Me---*/
-li{
+.item li{
   font-size: 20px;
   list-style-type: none;
   text-align: left;
@@ -89,6 +89,12 @@ li{
   background-color: rgb(196, 190, 190);
   border-radius: 10px;
   padding:5px;
+  
+}
+.services li{
+list-style: square;
+list-style-position: inside;
+text-align: left;
 }
 
 /*Portfolio*/
@@ -141,6 +147,12 @@ color: rgb(11, 7, 207)
 .text a:hover{color: grey;}
 .text a:active{color:black}
 
+.skills li{
+  list-style: square;
+  list-style-position: inside;
+  text-align: center;  
+  }
+ 
 /*Background color change to section*/
 
 section.portfolio{
